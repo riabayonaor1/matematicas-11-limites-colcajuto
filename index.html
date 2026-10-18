@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#006400">
+<title>Matemáticas 11 · Sucesiones y límites · COLCAJUTO</title>
+<style>html,body{margin:0;width:100%;height:100%;font:14px system-ui,sans-serif;background:#f6f8f3;color:#17362a}iframe{border:0;width:100%;height:calc(100% - 34px);display:block}footer{height:34px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:12px;background:#e4efdf;font-size:11px}a{color:#006400}a:focus-visible{outline:3px solid #e97817}noscript{padding:20px}</style>
+</head>
+<body>
+<iframe id="laboratorio" title="Laboratorio interactivo: funciones, sucesiones, límites y educación financiera" src="https://matematicas-11-sucesiones-colcajuto-2026.riabayonaor.chatgpt.site/"></iframe>
+<footer><span>COLCAJUTO · Matemáticas 11</span><a id="alternativo" href="https://matematicas-11-sucesiones-colcajuto-2026.riabayonaor.chatgpt.site/" target="_blank" rel="noopener">Abrir laboratorio por separado</a></footer>
+<noscript><a href="https://matematicas-11-sucesiones-colcajuto-2026.riabayonaor.chatgpt.site/">Abrir el laboratorio</a></noscript>
+<script>
+const temas=['funciones','sucesiones','monotonia','limite','comportamiento','propiedades','indeterminaciones','finanzas'];
+const solicitado=new URLSearchParams(location.search).get('tema')||location.hash.slice(1);
+const tema=temas.includes(solicitado)?solicitado:'funciones';
+const destino='https://matematicas-11-sucesiones-colcajuto-2026.riabayonaor.chatgpt.site/?tema='+tema;
+document.getElementById('laboratorio').src=destino;
+document.getElementById('alternativo').href=destino;
+</script>
+</body></html>
